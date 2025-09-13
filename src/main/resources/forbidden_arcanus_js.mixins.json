@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.chen1335.forbiddenAndArcanusJS.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["ClibanoCombustionCategoryMixin", "ForbiddenArcanusJEIPluginMixin", "ForbiddenArcanusMixin", "HephaestusForgeCategoryMixin", "RecipeManagerMixin", "RitualManagerMixin", "RitualMixin"],
+  "minVersion": "0.8"
+}
