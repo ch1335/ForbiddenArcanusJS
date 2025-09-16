@@ -24,7 +24,7 @@ public abstract class HephaestusForgeCategoryMixin implements IRecipeCategory<Ri
         Level level = Minecraft.getInstance().level;
         List<RecipeHolder<Recipe<RecipeInput>>> recipes = level.getRecipeManager().getAllRecipesFor(Cast.cast(ForbiddenArcanusRecipeFix.RITUAL_RECIPE_TYPE.value()));
         for (RecipeHolder<Recipe<RecipeInput>> recipeRecipeHolder : recipes) {
-            if (recipeRecipeHolder.value().equals(recipe)) {
+            if (recipeRecipeHolder.value().equals(Cast.cast(recipe))) {
                 return recipeRecipeHolder.id();
             }
         }

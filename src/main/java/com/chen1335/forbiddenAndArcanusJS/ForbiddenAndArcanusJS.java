@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 @Mod(ForbiddenAndArcanusJS.MODID)
 public class ForbiddenAndArcanusJS {
     public static final String MODID = "forbidden_arcanus_js";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public ForbiddenAndArcanusJS(IEventBus modEventBus, ModContainer modContainer) {
 

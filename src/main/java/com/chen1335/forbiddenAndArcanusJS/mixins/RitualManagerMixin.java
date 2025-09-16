@@ -33,7 +33,7 @@ public class RitualManagerMixin {
             return original.call(instance);
         }
         List<? extends RecipeHolder<?>> recipes = this.level.getRecipeManager().getAllRecipesFor(Cast.cast(ForbiddenArcanusRecipeFix.RITUAL_RECIPE_TYPE.value()));
-        return (Iterator) recipes.stream().map(RecipeHolder::value).map(Holder::direct).toList().iterator();
+        return Cast.cast(recipes.stream().map(RecipeHolder::value).map(Holder::direct).toList().iterator());
     }
 
 
