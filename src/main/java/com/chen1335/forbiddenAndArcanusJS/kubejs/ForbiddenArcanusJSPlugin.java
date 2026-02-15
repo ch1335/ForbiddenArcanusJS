@@ -3,6 +3,7 @@ package com.chen1335.forbiddenAndArcanusJS.kubejs;
 import com.chen1335.forbiddenAndArcanusJS.ForbiddenAndArcanusJS;
 import com.chen1335.forbiddenAndArcanusJS.kubejs.recipe.Schemas;
 import com.chen1335.forbiddenAndArcanusJS.kubejs.recipe.clibanoCombustion.ClibanoRecipeSchema;
+import com.chen1335.forbiddenAndArcanusJS.kubejs.recipe.combineResidue.CombineResiduesSchema;
 import com.chen1335.forbiddenAndArcanusJS.kubejs.recipe.ritual.RitualRecipeSchema;
 import com.chen1335.forbiddenAndArcanusJS.kubejs.recipe.ritual.RitualResults;
 import com.chen1335.forbiddenAndArcanusJS.wrappers.EnhancerDefinitionWrapper;
@@ -22,6 +23,7 @@ public class ForbiddenArcanusJSPlugin extends KubeJSPlugin {
     public void registerRecipeSchemas(RegisterRecipeSchemasEvent event) {
         event.register(ForbiddenAndArcanusJS.FAId("ritual"), RitualRecipeSchema.SCHEMA);
         event.register(ForbiddenAndArcanusJS.FAId("clibano_combustion"), ClibanoRecipeSchema.SCHEMA);
+        event.register(ForbiddenAndArcanusJS.FAId("combine_residues"), CombineResiduesSchema.SCHEMA);
     }
 
     @Override

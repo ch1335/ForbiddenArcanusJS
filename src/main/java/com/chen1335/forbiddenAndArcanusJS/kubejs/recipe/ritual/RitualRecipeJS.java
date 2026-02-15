@@ -47,42 +47,42 @@ public class RitualRecipeJS extends RecipeJS {
 
     public final RitualRecipeJS enhancers(EnhancerDefinition enhancerDefinition) {
         RitualRequirements value = getValue(RitualRecipeSchema.RITUAL_REQUIREMENTS);
-        int enhancers = 1;
+        int tier = 1;
         if (value != null) {
-            enhancers = value.tier();
+            tier = value.tier();
         }
 
-        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(enhancers, List.of(Holder.direct(enhancerDefinition))));
+        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(tier, List.of(Holder.direct(enhancerDefinition))));
         return this;
     }
 
     public final RitualRecipeJS enhancers(EnhancerDefinition enhancerDefinitions1, EnhancerDefinition enhancerDefinitions2) {
         RitualRequirements value = getValue(RitualRecipeSchema.RITUAL_REQUIREMENTS);
-        int enhancers = 1;
+        int tier = 1;
         if (value != null) {
-            enhancers = value.tier();
+            tier = value.tier();
         }
-        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(enhancers, List.of(Holder.direct(enhancerDefinitions1), Holder.direct(enhancerDefinitions2))));
+        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(tier, List.of(Holder.direct(enhancerDefinitions1), Holder.direct(enhancerDefinitions2))));
         return this;
     }
 
     public final RitualRecipeJS enhancers(EnhancerDefinition enhancerDefinitions1, EnhancerDefinition enhancerDefinitions2, EnhancerDefinition enhancerDefinitions3) {
         RitualRequirements value = getValue(RitualRecipeSchema.RITUAL_REQUIREMENTS);
-        int enhancers = 1;
+        int tier = 1;
         if (value != null) {
-            enhancers = value.tier();
+            tier = value.tier();
         }
-        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(enhancers, List.of(Holder.direct(enhancerDefinitions1), Holder.direct(enhancerDefinitions2), Holder.direct(enhancerDefinitions3))));
+        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(tier, List.of(Holder.direct(enhancerDefinitions1), Holder.direct(enhancerDefinitions2), Holder.direct(enhancerDefinitions3))));
         return this;
     }
 
     public final RitualRecipeJS enhancers(EnhancerDefinition enhancerDefinitions1, EnhancerDefinition enhancerDefinitions2, EnhancerDefinition enhancerDefinitions3, EnhancerDefinition enhancerDefinitions4) {
         RitualRequirements value = getValue(RitualRecipeSchema.RITUAL_REQUIREMENTS);
-        int enhancers = 1;
+        int tier = 1;
         if (value != null) {
-            enhancers = value.tier();
+            tier = value.tier();
         }
-        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(enhancers, List.of(Holder.direct(enhancerDefinitions1), Holder.direct(enhancerDefinitions2), Holder.direct(enhancerDefinitions3), Holder.direct(enhancerDefinitions4))));
+        setValue(RitualRecipeSchema.RITUAL_REQUIREMENTS, new RitualRequirements(tier, List.of(Holder.direct(enhancerDefinitions1), Holder.direct(enhancerDefinitions2), Holder.direct(enhancerDefinitions3), Holder.direct(enhancerDefinitions4))));
         return this;
     }
 
